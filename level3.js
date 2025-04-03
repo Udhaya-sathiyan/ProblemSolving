@@ -22,26 +22,27 @@
 // hallowSquare (4)
 
 // // function fibo(n){
+  function fibbo(n){
+    let f1=1;
+    let f2=0;
+    let f3=0;
+    for(i=3;i<=n;i++){
+      f3=f1+f2;
+      f2=f1;
+      f1=f3;
+    }
+    if(n==1){
+      console.log(0)
+    }
+    else if(n==2){
+      console.log(1)
+    }
+    else{
+      console.log(f3)
+    }
+  }
 
-  let f1=1;
-  let f2=0;
-  let f3=0;
-  for(i=3;i<=n;i++){
-    f3=f1+f2;
-    f2=f1;
-    f1=f3;
-  }
-  if(n==1){
-    console.log(0)
-  }
-  else if(n==2){
-    console.log(1)
-  }
-  else{
-    console.log(f3)
-  }
-
-fibo(8)
+fibbo(8)
 
 // // // Given a value n print the below pattern n = 3
 
